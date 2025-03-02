@@ -1,77 +1,86 @@
-# Detailed Summary of Indian Standard IS 875 (Part 1 and Part 2)  
+# IS 875: Indian Standard Code for Design Loads (Other than Earthquake)  
+**Part 1: Dead Loads** | **Part 2: Imposed Loads**  
 
 ---
 
-## **IS 875 Part 1: Dead Loads**  
+## **Part 1: Dead Loads (Unit Weights)**  
 
-### **Table 1: Clause Summary**  
-| Clause No. | Description |  
-|------------|--------------|  
-| **1** | **Scope and Application**: Applies to all buildings/structures. Specifies methods to calculate dead loads (permanent loads from materials, finishes, and fixed equipment). |  
-| **2** | **Definitions**: Defines "dead load" (static, permanent) and "unit weight" (weight per unit volume, e.g., kN/m³). |  
-| **3** | **General Guidelines**: Dead loads must include self-weight, finishes, partitions, and fixed services. |  
-| **4** | **Unit Weights of Materials**: Lists densities for concrete, masonry, steel, timber, etc. |  
-| **5** | **Loads from Walls**: Calculated based on material, thickness, and height. |  
-| **6** | **Loads from Floors**: Includes slab weight, screeds, and finishes. |  
-| **7** | **Loads from Roofs**: Covers roofing materials (tiles, waterproofing) and fixtures (solar panels). |  
-| **8** | **Partitions**: Fixed partitions use actual weight; movable partitions may be treated as live loads. |  
-| **9** | **Services**: Includes HVAC, plumbing, and electrical installations. |  
-| **10** | **Fixed Equipment**: Requires project-specific calculations (e.g., heavy machinery). |  
-| **11** | **Combination with Other Loads**: Dead loads combined with live/wind/snow loads per IS 875:Part 5. |  
+### **Building Materials**  
+| Material/Component           | Unit Weight (kN/m³) | Unit Weight (kg/m³) | Notes                |  
+|------------------------------|---------------------|---------------------|----------------------|  
+| Cement (Ordinary)             | 14.10              | 1,440               | -                    |  
+| Common Burnt Clay Bricks      | 15.70–18.85        | 1,600–1,920         | -                    |  
+| Reinforced Cement Concrete    | 22.25–26.50        | 2,270–2,700         | Varies with steel %  |  
+| Sand (Dry, Clean)             | 15.10–15.70        | 1,540–1,600         | -                    |  
+| Timber (Teak)                 | 6.28               | 640                 | 12% moisture content |  
 
----
+### **Building Components**  
+| Component                    | Thickness (mm) | Unit Weight (kN/m²) | Notes                |  
+|------------------------------|----------------|---------------------|----------------------|  
+| Plaster on Tile/Concrete      | 13             | 0.25                | -                    |  
+| Mangalore Tiles with Battens  | -              | 0.64                | Includes battens    |  
+| Asphalt Flooring              | 10             | 0.22                | -                    |  
 
-### **Table 2: Dead Load Values**  
-| **Load Type**              | **Value/Range** | **Unit** |  
-|-----------------------------|------------------|----------|  
-| Reinforced Concrete         | 24–25 kN/m³      | kN/m³    |  
-| Brick Masonry               | 18–20 kN/m³      | kN/m³    |  
-| Floor Finishes              | 0.5–1.5 kN/m²    | kN/m²    |  
-| Steel                       | 78.5 kN/m³       | kN/m³    |  
-| Plaster                     | 20–22 kN/m³      | kN/m³    |  
-| Fixed Partitions            | 1–2 kN/m²        | kN/m²    |  
-| Roof Waterproofing          | 0.2–0.5 kN/m²    | kN/m²    |  
-| Services (HVAC, Plumbing)   | 0.5–1 kN/m²      | kN/m²    |  
+### **Stored Materials (Appendix A)**  
+| Category               | Material          | Unit Weight (kN/m³) | Angle of Friction (°) |  
+|------------------------|-------------------|---------------------|------------------------|  
+| Agricultural           | Wheat (Bulk)      | 8.15                | 28                     |  
+| Fuels                  | Coal (Untreated)  | 9.80                | -                      |  
+| Metals                 | Aluminum (Wrought)| 25.90–27.45         | -                      |  
 
 ---
 
-## **IS 875 Part 2: Imposed (Live) Loads**  
+## **Part 2: Imposed Loads**  
 
-### **Table 3: Clause Summary**  
-| Clause No. | Description |  
-|------------|--------------|  
-| **1** | **Scope**: Applies to buildings based on occupancy (residential, commercial, industrial). |  
-| **2** | **Definitions**: Defines "imposed loads" (temporary, dynamic) and types (UDL, concentrated loads). |  
-| **3** | **Classification of Buildings**: Groups structures by occupancy type (e.g., offices, warehouses). |  
-| **4** | **Imposed Loads by Occupancy**: Specifies UDL and concentrated loads for different occupancies. |  
-| **5** | **Reduction for Large Areas**: Allows live load reduction for floors >50 m² using a formula. |  
-| **6** | **Stairs and Balconies**: Higher loads for stairs (3–5 kN/m²) and balconies (3–4 kN/m²). |  
-| **7** | **Impact Loads**: Dynamic forces from moving loads (e.g., elevators) with impact factors. |  
-| **8** | **Machinery Loads**: Requires project-specific data for heavy machinery. |  
-| **9** | **Load Combinations**: Combines live loads with dead/wind/earthquake loads per IS 456. |  
+### **Floor Loads by Occupancy**  
+| Occupancy Classification       | UDL (kN/m²) | Concentrated Load (kN) | Notes                          |  
+|--------------------------------|-------------|------------------------|--------------------------------|  
+| **Residential Buildings**      |             |                        |                                |  
+| - Dwelling (Habitable Rooms)   | 2.0         | 1.8                    | Balconies: 3.0 kN/m² + 1.5 kN/m edge load |  
+| - Hotels (Dining Rooms)        | 4.0         | 2.7                    | -                              |  
+| **Educational Buildings**      |             |                        |                                |  
+| - Classrooms                   | 3.0         | 2.7                    | Libraries: 6.0 kN/m² (stack rooms) |  
+| **Industrial Buildings**       |             |                        |                                |  
+| - Light-Duty Work Areas        | 5.0         | 4.5                    | Heavy-Duty: 10.0 kN/m²         |  
+| **Assembly Buildings**         |             |                        |                                |  
+| - Theaters (Fixed Seats)       | 4.0         | -                      | Stages: 5.0 kN/m²              |  
 
----
+### **Roof Loads**  
+| Roof Type / Slope              | UDL (kN/m²) | Minimum Load              |  
+|--------------------------------|-------------|---------------------------|  
+| Flat/Sloping (≤10°), Access    | 1.5         | 3.75 kN/m width           |  
+| Flat/Sloping (≤10°), No Access | 0.75        | 1.9 kN/m width            |  
+| Sloping (>10°)                 | 0.75–0.02×slope | Min 0.4 kN/m²        |  
 
-### **Table 4: Imposed Load Values**  
-| **Load Type**               | **Value/Range**          | **Unit**       |  
-|-----------------------------|--------------------------|----------------|  
-| Residential Floors          | 2–3 kN/m²                | kN/m² (UDL)    |  
-| Office Floors               | 3–4 kN/m²                | kN/m² (UDL)    |  
-| Retail Spaces               | 4–5 kN/m²                | kN/m² (UDL)    |  
-| Warehouses                  | 5–10 kN/m²               | kN/m² (UDL)    |  
-| Stairs                      | 3–5 kN/m²                | kN/m² (UDL)    |  
-| Balconies                   | 3–4 kN/m²                | kN/m² (UDL)    |  
-| Concentrated Load (Residential) | 4.5 kN           | kN (Point Load)|  
-| Impact Factor               | 25–50% of live load      | -              |  
-| Live Load Reduction Formula | Reduced Load = Original Load × [0.25 + 3/√(Area)] | - |  
+### **Horizontal Loads**  
+| Component                     | Horizontal Load (kN/m) | Vertical Load (kN/m) |  
+|-------------------------------|------------------------|----------------------|  
+| Public Balustrades             | 0.75                   | 0.75                 |  
+| Assembly Areas (Stadiums)     | 2.25                   | 2.25                 |  
 
 ---
 
-### **Key Notes**:  
-1. **Dead Loads**: Permanent loads calculated using material unit weights (e.g., concrete = 25 kN/m³).  
-2. **Imposed Loads**: Variable loads dependent on occupancy; UDL values specified for floors, stairs, and balconies.  
-3. **Units**:  
-   - Dead Loads: kN/m³ (material density) or kN/m² (distributed loads).  
-   - Imposed Loads: kN/m² (UDL) or kN (concentrated loads).  
+## **Key Rules**  
 
-> **Note**: For precise design, always refer to the latest IS 875 documents and consult a structural engineer.  
+### **Load Reductions**  
+1. **Columns/Foundations**:  
+   - 1 floor: 0% | 5–10 floors: 40% | >10 floors: **50%** reduction.  
+2. **Beams**:  
+   - 5% reduction per 50 m² (max 25%) for spans ≥50 m².  
+
+### **Impact Allowances**  
+- **Lifts/Hoists**: 100% vertical load.  
+- **Crane Girders**: 25% vertical load + 5–10% transverse force.  
+
+---
+
+## **Amendments (2006)**  
+1. **Terminology**: "Live load" replaced with **"imposed load"**.  
+2. **Reduction Limits**: Max reduction for columns increased to **50%** (from 40%).  
+3. **Design Notes**: Mandatory posting of floor capacities (e.g., *"Designed Imposed Floor Loading: 4.0 kN/m²"*).  
+
+---
+
+**References**:  
+- [IS 875 Part 1 (Dead Loads)](https://law.resource.org/pub/in/bis/S03/is.875.1.1987.pdf)  
+- [IS 875 Part 2 (Imposed Loads)](https://law.resource.org/pub/in/bis/S03/is.875.2.1987.pdf)  
